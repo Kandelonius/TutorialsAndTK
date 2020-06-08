@@ -156,6 +156,36 @@ public class Main
         System.out.println("Some long number is " + challengeLong);
         method(10); // prints int
 
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Hello! My name is Aid.");
+        System.out.println("I was created in 2018.");
+        System.out.println("Please, remind me your name.");
+
+        String name = scanner.next();// reading a name
+
+        System.out.println("What a great name you have,"+  name +"!");
+        System.out.println("Let me guess your age.");
+        System.out.println("Enter remainders of dividing your age by 3, 5 and 7.");
+
+        int remainder3, remainder5, remainder7, totalAge = 0;// reading all remainders
+        remainder3 = scanner.nextInt();
+        remainder5 = scanner.nextInt();
+        remainder7 = scanner.nextInt();
+
+        totalAge = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105;
+
+
+        System.out.println("Your age is "+ totalAge+" that's a good time to start programming!");
+        System.out.println(24%2);
+
+        int n = 0;
+        System.out.print(++n);
+        System.out.print(n++);
+        System.out.print(n++);
+        System.out.print(++n);
+        System.out.print(n++);
+        System.out.print(n);
 
         //        Robot sam = new Robot();
         //
