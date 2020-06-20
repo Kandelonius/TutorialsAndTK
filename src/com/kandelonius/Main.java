@@ -1,5 +1,5 @@
 package com.kandelonius;
-import java.sql.SQLOutput;
+
 import java.util.Scanner;
 
 public class Main
@@ -139,6 +139,22 @@ public class Main
         //        accepted because I don't have the L at the end of the number.
         long bigLongLiteralValue = 2_147_483_648L;
         System.out.println("big long variable is " + bigLongLiteralValue);
+
+        float myMinFloatValue = Float.MIN_VALUE;
+        float myMaxFloatValue = Float.MAX_VALUE;
+
+        System.out.println("Float Minimum value = "+myMinFloatValue);
+        System.out.println("Float Maximum value = "+myMaxFloatValue);
+
+        double myMinDoubleValue = Double.MIN_VALUE;
+        double myMaxDoubleValue = Double.MAX_VALUE;
+
+        System.out.println("Double Minimum value = " + myMinDoubleValue);
+        System.out.println("Double Maximum value = " + myMaxDoubleValue);
+
+        int myIntValue = 5;
+        float myFloatValue = (float) 5.25;
+        double myDoubleValue = 5.25d;
 
         int myTotal = (myMinIntValue / 2); // dividing an int variable by a number is fine and expected by java
 
