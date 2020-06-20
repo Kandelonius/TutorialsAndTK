@@ -60,6 +60,10 @@ public class Numbers
         float myFloatValue = (float) 5.25;
         double myDoubleValue = 5.25d;
 
+        myIntValue = 5/3;
+        myFloatValue = 5f/3f;
+        myDoubleValue = 5d/3d;
+
         System.out.println("MyIntValue = " + myIntValue);
         System.out.println("MyFloatValue = " + myFloatValue);
         System.out.println("MyDoubleValue = " + myDoubleValue);
@@ -79,5 +83,13 @@ public class Numbers
         long challengeLong = (50_000 + 10 * (challengeByte + challengeShort + challengeInt));
 
         System.out.println("Some long number is " + challengeLong);
+
+        //challenge #2
+        //convert pounds to kilograms
+        double pounds = 7, kilograms = 0;
+
+        kilograms = pounds*0.45359237;
+
+        System.out.println(pounds+" pounds is "+kilograms+" kilograms.");
     }
 }
