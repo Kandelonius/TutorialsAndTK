@@ -60,9 +60,9 @@ public class Numbers
         float myFloatValue = (float) 5.25;
         double myDoubleValue = 5.25d;
 
-        myIntValue = 5/3;
-        myFloatValue = 5f/3f;
-        myDoubleValue = 5d/3d;
+        myIntValue = 5 / 3;
+        myFloatValue = 5f / 3f;
+        myDoubleValue = 5d / 3d;
 
         System.out.println("MyIntValue = " + myIntValue);
         System.out.println("MyFloatValue = " + myFloatValue);
@@ -86,10 +86,24 @@ public class Numbers
 
         //challenge #2
         //convert pounds to kilograms
-        double pounds = 7, kilograms = 0;
+        double pounds = 200, kilograms = 0;
 
-        kilograms = pounds*0.45359237;
+        kilograms = pounds * 0.45359237;
 
-        System.out.println(pounds+" pounds is "+kilograms+" kilograms.");
+        System.out.println(pounds + " pounds is " + kilograms + " kilograms.");
+
+        int result = 1 + 2;
+        System.out.println("Result is " + result);
+        int previousResult = result;
+        System.out.println("PreviousReslut is " + previousResult);
+        result = result -1;
+        System.out.println("3-1 = "+result);
+        System.out.println("PreviousReslut is " + previousResult);
+        result = result * 10;
+        System.out.println("Result is " + result);
+        result = result / 5;
+        System.out.println("Result is " + result);
+        result = result % 3;
+        System.out.println("Result is " + result);
     }
 }
