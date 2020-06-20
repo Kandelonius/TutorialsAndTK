@@ -21,7 +21,6 @@ public class Main
     }
     public static void main(String[] args)
     {
-
         class Frog
         {
             private String name;
@@ -100,100 +99,6 @@ public class Main
 
         System.out.println(frog1.getName());
         System.out.println(frog1.getAge());
-
-        int myValue = 10000;
-
-        int myMinIntValue = Integer.MIN_VALUE;
-        int myMaxIntValue = Integer.MAX_VALUE;
-
-        System.out.println("Integer Minimum Value = " + myMinIntValue);
-        System.out.println("Integer Minimum Value = " + myMaxIntValue);
-        System.out.println("Busted MAX value = " + (myMaxIntValue + 1));// overflows to MIN_VALUE
-        System.out.println("Busted MIN value = " + (myMinIntValue - 1));// underflows to MAX_VALUE
-
-        int myMaxIntTest = 2_147_483_647;// prints out as normal
-
-        System.out.println("MaxInt written out with underscores " + myMaxIntTest);
-
-        byte myMinByteValue = Byte.MIN_VALUE;
-        byte myMaxByteValue = Byte.MAX_VALUE;
-
-        System.out.println("Byte Minimum Value = " + myMinByteValue);
-        System.out.println("Byte Minimum Value = " + myMaxByteValue);
-
-        short myMinShortValue = Short.MIN_VALUE;
-        short myMaxShortValue = Short.MAX_VALUE;
-
-        System.out.println("Short Minimum Value = " + myMinShortValue);
-        System.out.println("Short Minimum Value = " + myMaxShortValue);
-
-        long myLongValue = 100L;
-
-        long myMinLongValue = Long.MIN_VALUE;
-        long myMaxLongValue = Long.MAX_VALUE;
-
-        System.out.println("Long Minimum Value = " + myMinLongValue);
-        System.out.println("Long Minimum Value = " + myMaxLongValue);
-
-        //        long bigLongLiteralValue = 2_147_483_648; even though I am calling this a long number it is not
-        //        accepted because I don't have the L at the end of the number.
-        long bigLongLiteralValue = 2_147_483_648L;
-        System.out.println("big long variable is " + bigLongLiteralValue);
-
-        float myMinFloatValue = Float.MIN_VALUE;
-        float myMaxFloatValue = Float.MAX_VALUE;
-
-        System.out.println("Float Minimum value = "+myMinFloatValue);
-        System.out.println("Float Maximum value = "+myMaxFloatValue);
-
-        double myMinDoubleValue = Double.MIN_VALUE;
-        double myMaxDoubleValue = Double.MAX_VALUE;
-
-        System.out.println("Double Minimum value = " + myMinDoubleValue);
-        System.out.println("Double Maximum value = " + myMaxDoubleValue);
-
-        int myIntValue = 5;
-        float myFloatValue = (float) 5.25;
-        double myDoubleValue = 5.25d;
-
-        int myTotal = (myMinIntValue / 2); // dividing an int variable by a number is fine and expected by java
-
-        //        byte myNewByteValue = (myMinByteValue / 2); gets an error because I said I was going to do
-        //        something with a byte but java by default puts an int into this type of expression.
-        byte myNewByteValue = (byte) (myMinByteValue / 2);// the above is remedied by casting the expression with the
-        // intended primitive type.
-
-        //challenge
-        byte challengeByte = 125;
-        short challengeShort = 13_370;
-        int challengeInt = 1_356_404;
-        long challengeLong = (50_000 + 10 * (challengeByte + challengeShort + challengeInt));
-
-        System.out.println("Some long number is " + challengeLong);
-        method(10); // prints int
-
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Hello! My name is Aid.");
-        System.out.println("I was created in 2018.");
-        System.out.println("Please, remind me your name.");
-
-        String name = scanner.next();// reading a name
-
-        System.out.println("What a great name you have,"+  name +"!");
-        System.out.println("Let me guess your age.");
-        System.out.println("Enter remainders of dividing your age by 3, 5 and 7.");
-
-        int remainder3, remainder5, remainder7, totalAge = 0;// reading all remainders
-        remainder3 = scanner.nextInt();
-        remainder5 = scanner.nextInt();
-        remainder7 = scanner.nextInt();
-
-        totalAge = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105;
-
-
-        System.out.println("Your age is "+ totalAge+" that's a good time to start programming!");
-        System.out.println(24%2);
 
         int n = 0;
         System.out.print(++n);
