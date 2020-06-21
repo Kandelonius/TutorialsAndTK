@@ -49,5 +49,28 @@ public class CharAndBoolean
         {
             System.out.println("Greater than second top score and less than 100");
         }
+        boolean isCar = false;
+        if(isCar)
+        {
+            System.out.println("This is not supposed to happen");
+        }
+        isCar = true;
+        boolean wasCar = isCar ? true : false;
+        if(wasCar)
+        {
+            System.out.println("wasCar is true");
+        }
+
+        // operator precedence challenge
+        double challengeNumber = 20.00, secondChallengeNumber = 80.00, result, resultMod;
+
+        result = (challengeNumber + secondChallengeNumber)*100;
+        resultMod = result%40.00;
+        boolean isZero = resultMod == 0;
+        System.out.println(isZero);
+        if(resultMod != 0)
+        {
+            System.out.println("Got some remainder");
+        }
     }
 }
