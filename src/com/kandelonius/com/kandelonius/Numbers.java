@@ -96,9 +96,9 @@ public class Numbers
         System.out.println("Result is " + result);
         int previousResult = result;
         System.out.println("PreviousReslut is " + previousResult);
-        result = result -1;
-        System.out.println("3-1 = "+result);
-        System.out.println("PreviousReslut is " + previousResult);
+        result = result - 1;
+        System.out.println("3-1 = " + result);
+        System.out.println("PreviousResult is " + previousResult);
         result = result * 10;
         System.out.println("Result is " + result);
         result = result / 5;
@@ -106,5 +106,28 @@ public class Numbers
         result = result % 3;
         System.out.println("Result is " + result);
 
+        int myVariable = 50;
+        myVariable++;
+        System.out.println("This is a test" +
+            " This is written on a different line in the editor but will print on one line.");
+
+        boolean gameOver = true;
+        int score = 800;
+        int levelCompleted = 5;
+        int bonus = 100;
+
+        if(gameOver)
+        {
+            int finalScore = score + (levelCompleted*bonus);
+            System.out.println("Your final score was "+finalScore);
+        }
+        score = 10000;
+        levelCompleted = 8;
+        bonus = 200;
+        if(gameOver)
+        {
+            int finalScore = score + (levelCompleted*bonus);
+            System.out.println("Your final score was "+finalScore);
+        }
     }
 }
