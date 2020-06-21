@@ -32,5 +32,22 @@ public class CharAndBoolean
         double doubleNumber = 120.47d;
         lastString = lastString + doubleNumber;
         System.out.println("LastString is equal to: "+lastString);
+
+        boolean isAlien = false;
+        if (!isAlien)
+        {
+            System.out.println("It is not an alien!");
+        }
+
+        int topScore = 100;
+        if(topScore != 100)
+        {
+            System.out.println("You got the high score!");
+        }
+        int secondTopScore = 60;
+        if(topScore > secondTopScore && topScore <= 100)
+        {
+            System.out.println("Greater than second top score and less than 100");
+        }
     }
 }

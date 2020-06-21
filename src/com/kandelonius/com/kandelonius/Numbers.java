@@ -105,5 +105,6 @@ public class Numbers
         System.out.println("Result is " + result);
         result = result % 3;
         System.out.println("Result is " + result);
+
     }
 }
